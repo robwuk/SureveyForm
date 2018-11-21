@@ -1,0 +1,69 @@
+<html>
+<header>
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="Survey.css">
+  <title>Robert Worth - FCC Responsive Web Design - Survey Page</title>
+</header>
+<body>
+<!-- load FCC test script -->
+  <script src="FCC_Test_Script.js"></script>
+
+  <div id="fcc_test_suite_wrapper" style="position: relative !important; z-index: 99999 !important;"></div>
+
+  <div id="main">
+    <div id="title_section">
+      <p><h1 id="title">FCC Survey Form</h1></p>
+    </div>
+
+    <div id="content">
+      <div id="info_section">
+        <p id="description">Welcome to the annual employee survey. Please take the time to complete the survey below and click the "sumbit" button. We will endeavour to read all of your replies and respond to approximately 1% of the issues you raise. As always, senior management will not be held accountable for the results of the survey and we expect the results to be similar or worse to last year.</p>
+      </div>
+      <form id="survey-form">
+        <div class="form_section">
+          <div class="name-label"><label for="name" id="name-label" class="name">Name:</label></div>
+          <div class="name"><input id="name" type="text" placeholder="enter your name" required></div>
+          <div class="email-label"><label for="email" id="email-label" class="email">Email:</label></div>
+          <div class="email"><input id="email" type="email" placeholder="name@example.com" required></div>
+          <div class="number-label"><label for="number" id="number-label">Staff Number:</label></div>
+          <div class="number"><input id="number" type="number" placeholder="xxxxx" min="00000" max="99999"></div>
+          <div class="dropdown-label"><label for"age" id="dropdown-label">Select age:</label></div>
+          <div class="dropdown">
+            <select name="age" id="dropdown">
+                <option value="lowest">less than 18</option>
+                <option value="low">18-30</option>
+                <option value="middle">31-50</option>
+                <option value="high">51-65</option>
+                <option value="highest">older than 65</option>
+            </select>
+          </div>
+          <div class="work-label"><label for="work-pattern">Select work pattern:</label></div>
+          <div class="work-pattern">
+            <label for="fulltime">
+              <input id="fulltime" type="radio" name="radio-buttons" value="F"> Full Time
+            </label>
+            <label for="parttime">
+              <input id="parttime" type="radio" name="radio-buttons" value="P"> Part Time
+            </label>
+            <label for="contract">
+              <input id="contract" type="radio" name="radio-buttons" value="C"> Contractor
+            </label>
+          </div>
+          <div class="improvement-label"><label for="improvement-area">Select areas that need improvement:</label></div>
+          <div class="improvement-area">
+            <label for="heating"><input id="heating" type="checkbox" name="improvements" value="Heating"> Heating</label><br />
+            <label for="lighting"><input id="lighting" type="checkbox" name="improvements" value="Lighting"> Lighting</label><br />
+            <label for="amenities"><input id="amenities" type="checkbox" name="improvements" value="Amenities"> Amenities</label><br />
+            <label for="breakout"><input id="breakout" type="checkbox" name="improvements" value="Breakout"> Breakout Area</label><br />
+            <label for="ambience"><input id="ambience" type="checkbox" name="improvements" value="Ambience"> Ambience</label>
+          </div>
+          <div class="comment-label"><label for"comments">Any other comments:</label></div>
+          <div class="comments">
+            <textarea name="comments" rows="10" cols="90">Enter additional comments</textarea>
+          </div>
+          <div class="submit"><input type="submit" id="submit"></div>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>

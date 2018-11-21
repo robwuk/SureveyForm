@@ -1,0 +1,131 @@
+#image{
+  max-width: 100%;
+  display: block;
+  height: auto;
+  border-radius: 10px;
+  border: 2px solid black;
+  box-shadow:  0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+body{
+  background-color:hsla(255, 100%, 16%, 1);
+  background-size: cover;
+}
+
+#title{
+    margin:2.5%;
+    width:95%;
+    color:white;
+
+}
+
+#content{
+  margin-left:10%;
+  background-color:hsla(255, 100%, 40%, 1);
+  width:80%;
+  box-shadow:  0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+#info_section{
+  background-color:hsla(255, 100%, 90%, 1);
+  padding-left: 5px;
+  padding-bottom:0.1%;
+  padding-right: 5px;
+  font-style: italic;
+}
+
+label{
+  color:white;
+}
+
+
+.form_section{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color:hslahsla(255, 100%, 75%, 1);
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: repeat(8, auto);
+  grid-gap:5px;
+  grid-template-areas:
+  "label1 input1"
+  "label2 input2"
+  "label3 input3"
+  "label4 input4"
+  "label5 input5"
+  "label6 input6"
+  "commentlab comment"
+  "footer footer";
+}
+
+.name-label{
+  text-align: right;
+  grid-area:label1;
+}
+
+.name{
+  grid-area:input1;
+}
+
+.email-label{
+  text-align: right;
+  grid-area:label2;
+}
+
+.email{
+  grid-area:input2;
+}
+
+.number-label{
+  text-align: right;
+  grid-area:label3;
+}
+
+.number{
+  grid-area:input3;
+}
+
+.dropdown-label{
+  text-align: right;
+  grid-area:label4;
+}
+
+.dropdown{
+  grid-area:input4;
+}
+
+.work-label{
+  text-align: right;
+  grid-area:label5;
+}
+
+.work-pattern{
+  grid-area:input5;
+}
+
+.improvement-label{
+  text-align: right;
+  grid-area:label6;
+}
+
+.improvement-area{
+  grid-area:input6;
+}
+
+.comment-label{
+  text-align: right;
+  grid-area:commentlab;
+}
+
+.comments{
+  grid-area:comment;
+}
+
+.submit{
+  justify-self: center;
+  grid-area: footer;
+}
+
+input[type=submit] {
+    width: 20em;  height: 2em;
+}
